@@ -1,0 +1,208 @@
+/* Paleta de cores refinada */
+:root {
+  --primary-color: #0288d1;
+  --secondary-color: #ff7043;
+  --background-color: #f9f9f9;
+  --text-color: #333;
+  --highlight-color: #0277bd;
+}
+
+/* Global */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo h1 {
+  font-size: 32px;
+  color: var(--primary-color);
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+.btn-cadastro {
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cadastro:hover {
+  background-color: #d84c26;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.hero-content {
+  text-align: left;
+  flex: 1;
+  max-width: 50%;
+}
+
+.hero-content h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero .btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px 40px;
+  font-size: 18px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+  background-color: var(--highlight-color);
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+}
+
+/* Sobre o Projeto Section */
+#sobre {
+  margin-top: 60px;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+.sobre-content h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.sobre-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Vagas Section */
+#vagas {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.vaga-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.vaga-card {
+  width: 30%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vaga-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.vaga-card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.vaga-card p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Imagem dentro da vaga */
+.vaga-card img {
+  width: 100%;
+  height: auto;
+  max-width: 250px; /* Limite de largura */
+  border-radius: 10px;
+  border: 3px solid #ddd; /* Moldura leve */
+  margin-bottom: 20px;
+}
+
+.vaga-card a {
+  padding: 12px 30px;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.vaga-card a:hover {
+  background-color: var(--highlight-color);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 60px;
+  color: #aaa;
+}
